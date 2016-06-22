@@ -3,7 +3,7 @@
 ----
 ## Recurring Events
 Recurring events takes in events and tells you when the next 4 valid call dates are. 
-
+Added Gems: Rspec suite, Pry ssuite
 
 ----
 ## Setting up an event
@@ -33,7 +33,7 @@ Show Page: Will show the details of the event as well as the next four Action Da
 ----
 ## Time to complete basic project
 -3 hours
-----
+
 ## Time to complete full project
 -5 hours
 
