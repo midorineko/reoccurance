@@ -22,7 +22,7 @@ Show Page: Will show the details of the event as well as the next four Action Da
 ## How it works
 1. Build the first Action Date based on startDate month, year, and actionDay
 2. Find the next 5 calculated action dates
-3. Minus one day for holidays and saturdays, minus 2 for sundays.(It is possible to do it this way because it is impossible with the bank holidays to have a friday then monday holiday)
+3. Minus one day for holidays and saturdays, minus 2 for sundays. Then I check for holidays again, because it is possible for friday to be a holiday if the weekend is saturday sunday. It is not possible based on the bank holidays for there to be more than two holidays in a row (not including weekends).
 4. Check if the start date is after or on the first action date we want to shift off the first action date. If the start date if before or on the first action date we want to pop off the last action date.
 5. The result is 4 non-holiday, weekday, action dates.
 
