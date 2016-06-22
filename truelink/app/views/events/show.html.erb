@@ -20,5 +20,11 @@
   <%= @event.action_day %>
 </p>
 
+<p>
+  <strong>Next Five Action Dates:</strong>
+  <%= @event.first_five_actions_dates %>
+</p>
+
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
