@@ -27,5 +27,9 @@ Show Page: Will show the details of the event as well as the next four Action Da
 5. The result is 4 non-holiday, weekday, action dates.
 
 ----
+## Testing
+-There are tests written in rspeec
+
+----
 ## Time to complete basic project
 -3 hours
