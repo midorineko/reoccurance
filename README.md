@@ -37,18 +37,11 @@ Show Page: Will show the details of the event as well as the next four Action Da
 ----
 ## Improvements
 1. Better handle the holidays all together
-
--start by hitting an api that return holiday dates
-
--handle holidays on mondays and fridays better
-
--handle holidays that are multiple days long
-
--only loop through holidays once and handle weekends at the same time
-
-2. Add a feature test around the creation of an event
-
--add tests that aren't just content based
-
-3. User a better naming convention
-4. Style
+2. Hit an api that return holiday dates
+3. Handle holidays on mondays and fridays better
+4. Handle holidays that are multiple days long
+5. only loop through holidays once and handle weekends at the same time
+6. Add a feature test around the creation of an event
+7. add tests that aren't just content based
+8. User a better naming convention
+9. Style
