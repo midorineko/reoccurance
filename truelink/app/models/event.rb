@@ -33,8 +33,12 @@ class Event < ActiveRecord::Base
 					first_five[i] -= 1.day
 				end
 			end
+			if date.cwday === 6
+				first_five[i]-=1.day
+			elsif date.cwday === 7
+				first_five[i]-=2.day
+			end
 		end
-		binding.pry
 		return first_five
 	end
 
