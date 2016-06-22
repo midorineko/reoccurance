@@ -16,9 +16,9 @@ Added Gems: Rspec suite, Pry suite
 
 ----
 ## Index and Show Pages
-Index Page: Contains each events information as well as the First Action Date.
+Index Page: Contains each events information as well as the First Action and Buffer Dates.
 
-Show Page: Will show the details of the event as well as the next four Action Dates in detail. 
+Show Page: Will show the details of the event as well as the next four Action and Buffer Dates in detail. 
 
 ----
 ## How it works
