@@ -2,10 +2,14 @@ class Event < ActiveRecord::Base
 
 	def holidays
 		holidays_2016 = ["Jan 1", "Jan 18", "Feb 15", "May 30", "Jul 4", "Sep 5", "Oct 10", "Nov 11", "Nov 24", "Dec 26"]
+		holidays_2017 = ["Jan 2", "Jan 16", "Feb 20", "May 29", "Jul 4", "Sep 4", "Oct 9", "Nov 11", "Nov 23", "Dec 25"]
 		holidays_2016.map! do |day|
 			Date.parse("#{day} 2016")
 		end
-		return holidays_2016
+		holidays_2017.map! do |day|
+			Date.parse("#{day} 2017")
+		end
+		return holidays_2016 + holidays_2017
 	end
 
 	def first_calculated_action_date
