@@ -37,11 +37,48 @@ class Event < ActiveRecord::Base
 					first_five[i] -= 1.day
 				end
 			end
-			if date.cwday === 6
+			if first_five[i].cwday === 6
 				first_five[i]-=1.day
-			elsif date.cwday === 7
+			elsif first_five[i].cwday === 7
 				first_five[i]-=2.day
 			end
+			holidays.each do |day|
+				if first_five[i] === day
+					first_five[i] -= 1.day
+				end
+			end
+		end
+		return first_five
+	end
+
+	def buffer_dates
+		first_five = first_five_action_dates()
+		first_five.map! do |date|
+			date-2.day
+		end
+		holdays = holidays()
+		first_five.each_with_index do |date, i|
+			holidays.each do |day|
+				if date === day
+					date -= 1.day
+					first_five[i] -= 1.day
+				end
+			end
+			if first_five[i].cwday === 6
+				first_five[i]-=1.day
+			elsif first_five[i].cwday === 7
+				first_five[i]-=2.day
+			end
+			holidays.each do |day|
+				if first_five[i] === day
+					first_five[i] -= 1.day
+				end
+			end
+		end
+		if start_date > first_five.first
+			first_five.shift
+		else
+			first_five.pop
 		end
 		return first_five
 	end

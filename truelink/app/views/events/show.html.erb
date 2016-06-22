@@ -25,6 +25,11 @@
   <%= @event.next_four_action_dates %>
 </p>
 
+<p>
+  <strong>Next Four Buffer Dates:</strong>
+  <%= @event.buffer_dates %>
+</p>
+
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
