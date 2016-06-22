@@ -33,6 +33,9 @@ Show Page: Will show the details of the event as well as the next four Action Da
 ----
 ## Time to complete basic project
 -3 hours
+----
+## Time to complete full project
+-5 hours
 
 ----
 ## Improvements
@@ -42,6 +45,7 @@ Show Page: Will show the details of the event as well as the next four Action Da
 4. Handle holidays that are multiple days long
 5. only loop through holidays once and handle weekends at the same time
 6. Add a feature test around the creation of an event
-7. add tests that aren't just content based
-8. User a better naming convention
-9. Style
+7. Add tests that aren't just content based
+8. Re-work the event model to utilize methods better, stop duplicate code for buffer dates 
+9. User a better naming convention
+10. Style
