@@ -12,6 +12,7 @@ Added Gems: Rspec suite, Pry suite
 2. Start date, when  the event should turn on
 3. Interval of months it should run
 4. Action day, the day of the month you would ideally have the action completed on
+5. Choose buffer period in days, 0 if there is none.
 
 ----
 ## Index and Show Pages
