@@ -33,3 +33,14 @@ Show Page: Will show the details of the event as well as the next four Action Da
 ----
 ## Time to complete basic project
 -3 hours
+
+----
+## Improvements
+1. Better handle the holidays all together
+-start by hitting an api that return holiday dates
+- handle holidays on mondays and fridays better
+- handle holidays that are multiple days long
+- only loop through holidays once and handle weekends at the same time
+2. Add a feature test around the creation of an event
+3. User a better naming convention
+4. Style
