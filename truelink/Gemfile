@@ -40,6 +40,10 @@ gem 'pry-byebug'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem "rspec"
+  gem "rspec-rails", "~> 2.8"
+  gem "autotest"
+  gem "autotest-standalone"
   gem 'byebug'
 end
 
