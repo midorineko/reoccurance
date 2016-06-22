@@ -53,10 +53,10 @@ class Event < ActiveRecord::Base
 
 	def buffer_dates
 		first_five = first_five_action_dates()
-		first_five.map! do |date|
-			date-2.day
-		end
 		holdays = holidays()
+		first_five.map! do |date|
+			date-buffer.day
+		end
 		first_five.each_with_index do |date, i|
 			holidays.each do |day|
 				if date === day

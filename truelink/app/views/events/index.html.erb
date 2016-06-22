@@ -10,6 +10,7 @@
       <th>Interval</th>
       <th>Action day</th>
       <th>First Action Date</th>
+      <th>First Buffer Date</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= event.interval %></td>
         <td><%= event.action_day %></td>
         <td><%= event.next_four_action_dates[0] %></td>
+        <td><%= event.buffer_dates[0] %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>

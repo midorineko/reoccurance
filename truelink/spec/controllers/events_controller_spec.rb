@@ -9,12 +9,10 @@ describe EventsController do
       get "index"
       response.status.should be 200
     end
- 
     it "gets the correct index view template" do
       get "index"
       response.should render_template("events/index")
     end
-
     it "should have the first action date on display" do
       get "index"
       response.body.should match(/2016-10-07/)
