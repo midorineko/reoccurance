@@ -3,7 +3,8 @@
 ----
 ## Recurring Events
 Recurring events takes in events and tells you when the next 4 valid call dates are. 
-Added Gems: Rspec suite, Pry ssuite
+
+Added Gems: Rspec suite, Pry suite
 
 ----
 ## Setting up an event
