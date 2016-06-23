@@ -1,4 +1,13 @@
-# Truelink Challange
+# Recurrance
+
+Did you ever need a quickly written program to give you recurring dates after a specified day. Let's say you are going out of town and you need your plant fed. It needs to be fed on the 20th or earlier each month. However you can only access the building on weekdays and non bank holidays. Well this will give you the next four dates that will be the perfect feeding time. 
+
+
+-git clone
+
+-rake db:migrate
+
+-rails s
 
 ----
 ## Recurring Events
